@@ -10,7 +10,6 @@ const Alert = ({ children }: Props) => {
       <div className="alert alert-primary" role="alert">
         {children}
       </div>
-      ;
     </>
   );
 };
