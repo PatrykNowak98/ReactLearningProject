@@ -1,0 +1,186 @@
+# ============================================
+# React + TypeScript + Vite Project
+# .gitignore - Updated: October 29, 2025
+# ============================================
+
+# ===== Dependencies =====
+node_modules/
+.pnp
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ===== Build Outputs =====
+dist/
+dist-ssr/
+build/
+.vite/
+*.local
+
+# ===== Testing =====
+coverage/
+.nyc_output/
+*.lcov
+
+# ===== Logs =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===== Environment Variables =====
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# ===== Editor - VS Code =====
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# ===== Editor - JetBrains (WebStorm, IntelliJ) =====
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ===== Editor - Sublime Text =====
+*.sublime-workspace
+*.sublime-project
+
+# ===== Editor - Other =====
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+.factorypath
+
+# ===== Operating System Files =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===== TypeScript =====
+*.tsbuildinfo
+.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ===== Package Manager =====
+package-lock.json  # Uncomment if using yarn
+yarn.lock          # Uncomment if using npm
+pnpm-lock.yaml     # Uncomment if not using pnpm
+
+# ===== Temporary Files =====
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist
+.serverless/
+.fusebox/
+
+# ===== Debugging =====
+.vscode-test
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+chrome-profiler-events*.json
+
+# ===== Optional: Commonly Generated Files =====
+# Storybook
+storybook-static/
+.storybook-out/
+
+# TypeDoc
+docs/
+
+# ESLint
+.eslintcache
+
+# Stylelint
+.stylelintcache
+
+# ===== Optional: Sensitive Data =====
+# Never commit these!
+*.key
+*.pem
+*.cert
+*.crt
+secrets/
+.secrets/
+
+# ===== Optional: Large Files =====
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ===== Misc =====
+.eslintcache
+.stylelintcache
+*.seed
+*.pid
+*.pid.lock
+.grunt
+.lock-wscript
+.npm
+.node_repl_history
+.sass-cache/
+connect.lock
+typings/
+
+# ===== React Specific =====
+.eslintrc.js.timestamp-*
+
+# ===== Vite Specific =====
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ============================================
+# Project-Specific Additions
+# Add your custom ignores below this line
+# ============================================
