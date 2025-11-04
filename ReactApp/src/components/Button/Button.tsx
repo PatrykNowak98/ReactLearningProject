@@ -1,3 +1,4 @@
+import styles from "./Button.module.css";
 import type { ReactNode } from "react";
 
 interface Props {
@@ -8,7 +9,11 @@ interface Props {
 
 const Button = ({ children, onClick, color = "primary" }: Props) => {
   return (
-    <button type="button" className={"btn btn-" + color} onClick={onClick}>
+    <button
+      type="button"
+      className={[styles.btn, styles[`btn-${color}`]].join(" ")}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

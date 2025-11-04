@@ -1,0 +1,20 @@
+.btn {
+    padding:8px 12px;
+    border-radius: 3px;
+    border: 0;
+}
+
+.btn-primary {
+    background: blue;
+    color: white;
+}
+
+.btn-secondary {
+    background: green;
+    color: white;
+}
+
+.btn-danger {
+    background: red;
+    color: white;
+}
