@@ -3,21 +3,20 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [game, setGame] = useState({
-    id: 1,
-    player: {
-      name: "John",
-    },
+  const [pizza, setPizza] = useState({
+    name: "Spicy Pepperoni",
+    toppings: ["Mushroom"],
   });
 
   const handleClick = () => {
-    setGame({ ...game, player: { ...game.player, name: "Adam" } });
+    setPizza({ ...pizza, toppings: [...pizza.toppings, "Salami"] });
   };
 
   return (
     <div>
-      {game.player.name}
-      <button onClick={handleClick}>ChangeName</button>
+      {pizza.name}
+      {pizza.toppings}
+      <button onClick={handleClick}>Add Topping</button>
     </div>
   );
 }
