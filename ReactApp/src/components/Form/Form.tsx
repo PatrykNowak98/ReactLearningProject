@@ -1,11 +1,14 @@
 import { useState, type FormEvent } from "react";
 
 const Form = () => {
-  const [person, setPerson] = useState({ name: "", age: "" });
+  const [person, setPerson] = useState({
+    name: "",
+    age: "",
+  });
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
-    console.log({ person });
+    console.log(person);
   };
 
   return (
