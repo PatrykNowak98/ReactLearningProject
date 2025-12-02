@@ -1,24 +1,18 @@
 // src/App.tsx
 import "./App.css";
-import { useEffect, useState } from "react";
-import ProductList from "./components/ProductList/ProductList";
+import { useEffect } from "react";
+
+const connect = () => console.log("Connecting");
+const disconnect = () => console.log("Disconnecting");
 
 function App() {
-  const [category, setcategory] = useState("");
-  useEffect(() => {});
+  useEffect(() => {
+    connect();
 
-  return (
-    <div>
-      <select
-        className="form-select"
-        onChange={(event) => setcategory(event.target.value)}
-      >
-        <option value="Clothing">Clothing</option>
-        <option value="Household">Household</option>
-      </select>
-      {<ProductList category={category} />}
-    </div>
-  );
+    return () => disconnect();
+  });
+
+  return <div></div>;
 }
 
 export default App;
