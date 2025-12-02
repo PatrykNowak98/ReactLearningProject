@@ -1,34 +1,22 @@
 // src/App.tsx
 import "./App.css";
-import Form from "./components/ExpensesProject/ExpensesForm/ExpensesForm";
-import Filter from "./components/ExpensesProject/ExpensesFilter/ExpensesFilter";
-import ExpensesList from "./components/ExpensesProject/ExpensesList/ExpensesList";
-import type { Expense, Category } from "./types";
-import { useEffect, useRef, useState } from "react";
-
-const CATEGORIES: Category[] = [
-  "Groceries",
-  "Utilities",
-  "Entertainment",
-  "Travel",
-  "Other",
-];
+import { useEffect, useState } from "react";
+import ProductList from "./components/ProductList/ProductList";
 
 function App() {
-  const ref = useRef<HTMLInputElement>(null);
-
-  //afterRender
-  useEffect(() => {
-    if (ref.current) ref.current.focus();
-  });
-
-  useEffect(() => {
-    document.title = "My App";
-  });
+  const [category, setcategory] = useState("");
+  useEffect(() => {});
 
   return (
     <div>
-      <input ref={ref} type="text" className="form-control" />
+      <select
+        className="form-select"
+        onChange={(event) => setcategory(event.target.value)}
+      >
+        <option value="Clothing">Clothing</option>
+        <option value="Household">Household</option>
+      </select>
+      {<ProductList category={category} />}
     </div>
   );
 }
